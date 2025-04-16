@@ -50,11 +50,16 @@ Modify the script to set up API keys and relevant parameters:
 
 ## Usage
 
-Run the simulation using:
+Run the simulation using (for .py files):
 
    ```bash
    python simulate_vehicle.py
    ```
+
+Run the simulation using (for .py files):
+
+   Shift + Enter  < -- For .ipynb files
+
 - The script will continuously simulate vehicle motion until manually interrupted.
 - Speed, GPS, and weather data will be displayed in the terminal.
 
