@@ -1,39 +1,49 @@
-Earth's Geometry and Coordinate System:
+# Earth's Geometry and Coordinate System
 
-    Latitude lines are parallel to each other and run horizontally around the globe, from 0° (the Equator) to 90° North (the North Pole) and 90° South (the South Pole).
+## Latitude and Longitude
 
-        The distance between two lines of latitude is approximately 111.32 kilometers or 111,320 meters, no matter where you are on Earth.
+### Latitude
+- **Latitude lines** are parallel to each other and run horizontally around the globe.
+- The **Equator** is at 0° latitude.
+- The **North Pole** is at 90° North, and the **South Pole** is at 90° South.
+- The distance between two lines of latitude is always approximately **111.32 kilometers** or **111,320 meters**, no matter where you are on Earth.
 
-    Longitude lines, on the other hand, converge at the North and South Poles and are widest apart at the Equator. The distance between two lines of longitude varies depending on the latitude, and it's greatest at the Equator.
+### Longitude
+- **Longitude lines** converge at the **North** and **South Poles** and are widest apart at the **Equator**.
+- The distance between two lines of longitude varies depending on the latitude. The greatest distance between two lines of longitude is at the Equator, and this distance shrinks as you move towards the poles.
 
-1. Longitude:
+## Calculations for Longitude and Latitude
 
-    1 degree of longitude at the Equator is about 111.32 kilometers or 111,320 meters, but this distance shrinks as you move towards the poles.
+### Longitude
 
-    To calculate the change in longitude, we need to account for this shrinking effect.
+1. At the **Equator**, 1 degree of longitude is about **111.32 kilometers** (or **111,320 meters**).
+2. As you move towards the poles, the distance between two lines of longitude decreases. The formula to calculate the distance between two lines of longitude is:
 
-    The formula to calculate the change in longitude is:
-    change in longitude=horizontal displacement111320×cos⁡(latitude in radians)
-    change in longitude=111320×cos(latitude in radians)horizontal displacement​
+        Change in Longitude = 111,320 meters × cos⁡(latitude in radians) (1)
 
-        The value 111320 meters is how far 1 degree of longitude represents at the equator.
 
-        cos⁡(latitude)cos(latitude) is used to scale that distance as you move north or south. The cosine of the latitude reduces the distance between degrees of longitude as you approach the poles. At the equator, cos⁡(0∘)=1cos(0∘)=1, meaning the distance per degree of longitude is largest, and at the poles, cos⁡(90∘)=0cos(90∘)=0, meaning degrees of longitude collapse to a point.
+- **111,320 meters** represents the distance per degree of longitude at the Equator.
+- **cos(latitude)** reduces this distance as you move north or south of the Equator. At the Equator (latitude 0°), **cos(0°) = 1**, meaning the distance per degree of longitude is largest. At the poles (latitude 90° North or South), **cos(90°) = 0**, meaning degrees of longitude collapse to a point.
 
-Example:
+#### Example:
+- **At the Equator (0° latitude)**, 1 degree of longitude = **111,320 meters**.
+- **At 40° North latitude**, the cosine of 40° is approximately **0.766**. So, 1 degree of longitude would be approximately:
 
-    At the Equator, 1 degree of longitude = 111,320 meters.
+        111,320 × 0.766 ≈ 85,430 meters (2)
+        
 
-    At 40° North (let's say somewhere in the U.S.), cos⁡(40∘)≈0.766cos(40∘)≈0.766. So 1 degree of longitude would be approximately:
-    111,320×0.766≈85,430 meters.
-    111,320×0.766≈85,430 meters.
+### Latitude
 
-2. Latitude:
+- The distance between two lines of latitude is the same at all locations on Earth because the Earth is nearly spherical.
+- **1 degree of latitude** is always **111.32 kilometers** or **111,320 meters**, regardless of your location on the Earth.
+- To calculate the change in latitude, we can directly use:
 
-    Latitude is a little simpler because the distance between each degree of latitude is the same across the entire Earth. The Earth is almost spherical, so 1 degree of latitude is always about 111.32 kilometers or 111,320 meters, no matter where you are on the Earth.
+        Change in Latitude = Vertical Displacement / 111,320
+    
 
-So, to calculate the change in latitude, we can directly use:
-change in latitude=vertical displacement111320
-change in latitude=111320vertical displacement​
+This is simpler because the distance per degree of latitude does not change depending on the position on Earth.
 
-This is simpler because the change per degree of latitude does not depend on the position on the Earth — it's always 111,320 meters per degree.
+## Summary of Key Points
+
+- **Latitude** lines are evenly spaced and always represent a distance of **111,320 meters** per degree, regardless of location.
+- **Longitude** lines are widest at the Equator and shrink in distance as you approach the poles. The distance between lines of longitude at a specific latitude can be calculated using the formula (1) above. Where **cos(latitude)** scales the distance as you move away from the Equator.
